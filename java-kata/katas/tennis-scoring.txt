@@ -1,0 +1,28 @@
+Requirements
+
+2 Spieler (Bob, Rob)
+Punktezähler
+Ergebnisausgabe als String entsprechend der Scoring-Regeln
+
+    Each player can have either of these points in one game “love” “15” “30” “40”
+    If you have 40 and you win the point you win the game, however there are special rules.
+    If both have 40 the players are “deuce”.
+    If the game is in deuce, the winner of a point will have advantage
+    If the player with advantage wins the ball he wins the game
+    If the player without advantage wins they are back at deuce.
+
+https://en.wikipedia.org/wiki/Tennis_scoring_system#Description
+
+Testtabelle z.B:
+
+            "0,0,Love all",
+            "1,1,Fifteen all",
+            "2,2,Thirty all",
+            "3,3,Deuce",
+            "4,3,Advantage Bob",
+            "4,5,Advantage Rob",
+            "4,6,Game Rob",
+            "6,4,Game Bob",
+            "0,1,Love Fifteen",
+            "1,2,Fifteen Thirty",
+            "4,2,Game Bob",
