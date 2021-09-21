@@ -14,7 +14,7 @@ import social.Main;
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.CoreMatchers.*;
 
-public class PostingSteps extends ApplicationTest {
+public class PostingSteps extends TestFxSteps {
     @Before
     public void setUpClass() throws Exception {
         ApplicationTest.launch(Main.class);
