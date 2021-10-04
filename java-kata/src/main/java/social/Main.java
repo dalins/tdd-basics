@@ -1,10 +1,15 @@
 package social;
 
+import java.util.stream.Stream;
+
 import javafx.application.Application;
+import javafx.collections.ObservableList;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -22,9 +27,9 @@ public class Main extends Application {
     private Scene createScene() {
         var timeline = new Timeline();
 
-        ListView<String> timelineListView = new ListView<>();
-        timelineListView.setItems(timeline.getItems());
-        timelineListView.setId("timeline");
+        TabPane timelineTabPane = new TabPane();
+        ObservableList<Tab> tabs = timelineTabPane.getTabs();
+        Stream.of(Users.values()).map(user -> createTimelineTabFor(user, timeline)).forEach(tabs::add);
 
         TextField inputField = new TextField();
         inputField.setId("input");
@@ -39,12 +44,25 @@ public class Main extends Application {
 
         BorderPane pane = new BorderPane();
         pane.setTop(userSelect);
-        pane.setCenter(timelineListView);
+        pane.setCenter(timelineTabPane);
 
         HBox postingBox = new HBox();
         postingBox.getChildren().addAll(inputField, button);
         pane.setBottom(postingBox);
 
         return new Scene(pane);
+    }
+
+    // ich hatte hier schon zu viel gemacht :(
+
+    Tab createTimelineTabFor(Users user, Timeline timeline) {
+        ListView<String> timelineListView = new ListView<>();
+        timelineListView.setItems(timeline.getItems());
+        timelineListView.setId("timeline");
+
+        Tab tab = new Tab();
+        tab.setContent(timelineListView);
+
+        return tab;
     }
 }

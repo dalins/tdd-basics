@@ -11,3 +11,8 @@ Backlog:
     Mentions: Bob can link to Charlie in a message using “@”
     Links: Alice can link to a clickable web resource in a message
     Direct Messages: Mallory can send a private message to Alice
+
+
+Todos:
+    Listenzugriff Timeline refactoren (Unmodifiable View auf die Liste)
+    TimelineView in Main einbauen

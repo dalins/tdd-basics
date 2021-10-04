@@ -6,9 +6,7 @@ public abstract class TestFxSteps extends ApplicationTest
 {
     static
     {
-        if (Boolean.getBoolean("headless"))
-        {
             System.setProperty("testfx.headless", "true");
-        }
+        
     }
 }

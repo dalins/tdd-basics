@@ -1,0 +1,16 @@
+Tennis Scoring: https://en.wikipedia.org/wiki/Tennis_scoring_system#Description
+
+2 Players (Bob & Rob)
+String output of Result after Scoring.
+
+"0,0,Love all",
+"1,1,Fifteen all",
+"2,2,Thirty all",
+"3,3,Deuce",
+"4,3,Advantage Bob",
+"4,5,Advantage Rob",
+"4,6,Game Rob",
+"6,4,Game Bob",
+"0,1,Love Fifteen",
+"1,2,Fifteen Thirty",
+"4,2,Game Bob"

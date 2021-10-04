@@ -7,3 +7,5 @@ Requirements
 5-Three numbers, delimited either way, returns the sum
 6-Negative numbers throw an exception
 7-Numbers greater than 1000 are ignored
+
+Source: https://osherove.com/tdd-kata-1
