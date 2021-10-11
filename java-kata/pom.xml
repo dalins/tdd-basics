@@ -22,7 +22,7 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<systemPropertyVariables>
-						<headless>true</headless>
+						<testfx.headless>true</testfx.headless>
 					</systemPropertyVariables>
 					<properties>
 						<configurationParameters>
@@ -101,6 +101,7 @@
 			<groupId>org.testfx</groupId>
 			<artifactId>openjfx-monocle</artifactId>
 			<version>jdk-11+26</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 

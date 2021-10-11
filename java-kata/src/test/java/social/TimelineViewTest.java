@@ -55,7 +55,8 @@ public class TimelineViewTest extends ApplicationTest {
         clickOn("#enterTextButton");
 
         // then:
-        assertThat(timeline.list, is(not(empty())));
-        assertThat(timeline.list.get(timeline.list.size() - 1), is(message));
+        var items = timeline.getItems();
+        assertThat(items, is(not(empty())));
+        assertThat(items.get(items.size() - 1), is(message));
     }
 }

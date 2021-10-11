@@ -1,5 +1,6 @@
 package social;
 
 public enum Users {
-    ALICE;
+    ALICE,
+    BOB;
 }

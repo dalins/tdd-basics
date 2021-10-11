@@ -12,7 +12,5 @@ Backlog:
     Links: Alice can link to a clickable web resource in a message
     Direct Messages: Mallory can send a private message to Alice
 
-
-Todos:
-    Listenzugriff Timeline refactoren (Unmodifiable View auf die Liste)
-    TimelineView in Main einbauen
+Next Steps:
+    GUI Überdenken: Eigene Timeline mit Posting-Funktionlität "separat" (eigene Komponente?)
