@@ -13,4 +13,5 @@ Backlog:
     Direct Messages: Mallory can send a private message to Alice
 
 Next Steps:
-    GUI Überdenken: Eigene Timeline mit Posting-Funktionlität "separat" (eigene Komponente?)
+    - UserPage der anderen User als Tabs (Timeline, Subscribe-Button, Hate-Button, Donate-Button, später auch Personal Message)
+    -- Zuerst Backlog Entry 2 (Reading) als BDD Test
